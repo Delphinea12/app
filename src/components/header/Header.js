@@ -53,7 +53,7 @@ function Header() {
           )}
           {viewOpenSource && (
             <li>
-              <a href="#opensource">Outils de quantification</a>
+              <a href="#projects">Outils de quantification</a>
             </li>
           )}
           {viewAchievement && (
