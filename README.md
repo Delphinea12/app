@@ -184,7 +184,7 @@ const achievementSection = { .... }
 
 const blogSection = { .... }
 
-const contactInfo = { .... }
+const  contactInfo= { .... }
 
 const twitterDetails = { ... }
 

@@ -8,7 +8,7 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 // Splash Screen
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: false, // set false to disable splash screen
   animation: splashAnimation,
   duration: 2000 // Set animation duration as per your animation
 };
@@ -16,19 +16,35 @@ const splashScreen = {
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: false // Set to false to use static SVG
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
-  subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+  username: "Dépression Post-Partum",
+  title: "Introduction",
+  subTitle: (
+    <>
+      D’après le dernier rapport de l’INSERM et de Santé Publique France publié en avril 2024, le suicide est la première cause de mortalité maternelle jusqu’à un an après la fin de la grossesse.
+      Le rapport met notamment en avant la prépondérance des suicides et des causes psychiatriques des décès (17 %) avec un décès maternel de cause psychiatrique toutes les trois semaines en France.
+      Il précise par ailleurs qu’il existe un pic aux alentours des quatre à cinq mois post-partum.
+      <br /><br />
+      Les conclusions du rapport sont très intéressantes du point de vue de la santé publique, car les auteurs estiment qu’une amélioration est possible :
+      plus de la moitié des décès maternels sont considérés comme probablement ou possiblement évitables, et dans deux tiers des cas, les soins dispensés n’ont pas été optimaux.
+      Ces décès maternels sont souvent issus d’une dépression post-partum (DPP) qui s’est installée et aggravée sans qu’une prise en charge thérapeutique ait pu être efficiente avant un passage à l’acte fatal.
+      <br /><br />
+      <a
+        href="https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-cardiovasculaires-et-accident-vasculaire-cerebral/maladies-vasculaires-de-la-grossesse/documents/enquetes-etudes/les-morts-maternelles-en-france-mieux-comprendre-pour-mieux-prevenir.-7e-rapport-de-l-enquete-nationale-confidentielle-sur-les-morts-maternelles"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Consulter le rapport complet ici.
+      </a>
+    </>
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+  resumeLink: "",
+  displayGreeting: true
 };
+
 
 // Social Media Links
 
@@ -42,88 +58,32 @@ const socialMediaLinks = {
   stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "La DPP : de quoi parle-t-on ?",
+  subTitle: "",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    "La dépression du post-partum est un trouble mental qui affecte les femmes après l'accouchement. Selon le DSM-5 (Manuel diagnostique et statistique des troubles mentaux, 5ᵉ édition), la DPP est un épisode de dépression majeure survenant pendant la grossesse ou dans les quatre semaines après l’accouchement.",
+    "Elle se manifeste par une humeur dépressive, une perte d’intérêt, des troubles du sommeil, de l’énergie, de la concentration et parfois des pensées suicidaires. Ces symptômes doivent durer au moins deux semaines et altérer le fonctionnement quotidien.",
+    "Elle peut s’accompagner d’anxiété et, dans les cas graves, évoluer en psychose du post-partum. Elle n’est pas à confondre avec le « baby blues » (voir tableau en annexe).",
+    "Dans ce contexte, la quantification de la DPP revêt une importance capitale pour le champ de la santé publique.",
+    "Comme le souligne Bruno Valat dans son article sur les enjeux de la quantification sanitaire au XXᵉ siècle, l’usage des statistiques en santé publique s’est progressivement imposé comme un outil central d’analyse et d’action.",
+    "Depuis l’essor de la statistique au XVIIᵉ siècle jusqu’à l’établissement d’institutions telles que l’INSEE et l’INED, la quantification a permis d’appréhender des problèmes de santé complexes en leur conférant une dimension scientifique et rationnelle.",
+    "Toutefois, cette omniprésence des chiffres suscite aussi des débats, notamment sur leur interprétation et leur rôle dans l’élaboration des politiques de santé.",
+    "Le très récent rapport de la Cour des Comptes, publié en mai 2024, sur la politique de périnatalité en France met en lumière des résultats sanitaires préoccupants dans ce champ, malgré une augmentation des moyens financiers consacrés à ce domaine (9,3 milliards d’euros en 2021, soit une augmentation de 9,41 % par rapport à 2016) et une diminution franche de la natalité française (-5,3 % entre 2016 et 2021).",
+    "En effet, la France présente des indicateurs défavorables, notamment en termes de mortinatalité et de mortalité néonatale, ainsi que des inégalités sociales et territoriales marquées.",
+    "La Cour propose plusieurs recommandations, notamment l’amélioration des outils de suivi épidémiologique, la révision de l’organisation des soins et le renforcement de la prévention et de l’accompagnement parental."
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
-  softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  softwareSkills: [],
+  display: true
 };
 
-// Education Section
-
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
   schools: [
     {
       schoolName: "Harvard University",
@@ -150,7 +110,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -171,34 +131,11 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
-  experience: [
-    {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
-  ]
+  title: "Les enjeux de la quantification de la dépression post-partum",
+  subTitle: "",
+  skills: [],
+  softwareSkills: [],
+  display: true
 };
 
 /* Your Open Source Section to View Your Github Pinned Projects
@@ -356,7 +293,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -365,7 +302,7 @@ const resumeSection = {
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
@@ -373,14 +310,15 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  email_address: "saadpasta70@gmail.com",
+  display: false
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
