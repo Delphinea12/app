@@ -24,14 +24,25 @@ const greeting = {
   title: "Introduction",
   subTitle: (
     <>
-      D’après le dernier rapport de l’INSERM et de Santé Publique France publié en avril 2024, le suicide est la première cause de mortalité maternelle jusqu’à un an après la fin de la grossesse.
-      Le rapport met notamment en avant la prépondérance des suicides et des causes psychiatriques des décès (17 %) avec un décès maternel de cause psychiatrique toutes les trois semaines en France.
-      Il précise par ailleurs qu’il existe un pic aux alentours des quatre à cinq mois post-partum.
-      <br /><br />
-      Les conclusions du rapport sont très intéressantes du point de vue de la santé publique, car les auteurs estiment qu’une amélioration est possible :
-      plus de la moitié des décès maternels sont considérés comme probablement ou possiblement évitables, et dans deux tiers des cas, les soins dispensés n’ont pas été optimaux.
-      Ces décès maternels sont souvent issus d’une dépression post-partum (DPP) qui s’est installée et aggravée sans qu’une prise en charge thérapeutique ait pu être efficiente avant un passage à l’acte fatal.
-      <br /><br />
+      D’après le dernier rapport de l’INSERM et de Santé Publique France publié
+      en avril 2024, le suicide est la première cause de mortalité maternelle
+      jusqu’à un an après la fin de la grossesse. Le rapport met notamment en
+      avant la prépondérance des suicides et des causes psychiatriques des décès
+      (17 %) avec un décès maternel de cause psychiatrique toutes les trois
+      semaines en France. Il précise par ailleurs qu’il existe un pic aux
+      alentours des quatre à cinq mois post-partum.
+      <br />
+      <br />
+      Les conclusions du rapport sont très intéressantes du point de vue de la
+      santé publique, car les auteurs estiment qu’une amélioration est possible
+      : plus de la moitié des décès maternels sont considérés comme probablement
+      ou possiblement évitables, et dans deux tiers des cas, les soins dispensés
+      n’ont pas été optimaux. Ces décès maternels sont souvent issus d’une
+      dépression post-partum (DPP) qui s’est installée et aggravée sans qu’une
+      prise en charge thérapeutique ait pu être efficiente avant un passage à
+      l’acte fatal.
+      <br />
+      <br />
       <a
         href="https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-cardiovasculaires-et-accident-vasculaire-cerebral/maladies-vasculaires-de-la-grossesse/documents/enquetes-etudes/les-morts-maternelles-en-france-mieux-comprendre-pour-mieux-prevenir.-7e-rapport-de-l-enquete-nationale-confidentielle-sur-les-morts-maternelles"
         target="_blank"
@@ -44,7 +55,6 @@ const greeting = {
   resumeLink: "",
   displayGreeting: true
 };
-
 
 // Social Media Links
 
