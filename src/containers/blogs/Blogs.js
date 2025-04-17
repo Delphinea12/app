@@ -57,66 +57,89 @@ export default function Blogs() {
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="ressource">
-  <div className="blog-header">
-    <h1 className="blog-header-text">{blogSection.title}</h1>
-    <p
-      className={
-        isDark ? "dark-mode blog-subtitle" : "subTitle blog-subtitle"
-      }
-    >
-      {blogSection.subtitle}
-    </p>
-  </div>
+        <div className="blog-header">
+          <h1 className="blog-header-text">{blogSection.title}</h1>
+          <p
+            className={
+              isDark ? "dark-mode blog-subtitle" : "subTitle blog-subtitle"
+            }
+          >
+            {blogSection.subtitle}
+          </p>
+        </div>
 
-  {/* Image 1 */}
-  <div className="blog-centered-image">
-    <img src={tab1} alt="Tableau troubles psychiques" className="blog-image" />
-    <p className="blog-caption">
-      Tableau récapitulatif des différents troubles psychiques du post-partum et les symptômes associés.
-    </p>
-  </div>
+        {/* Image 1 */}
+        <div className="blog-centered-image">
+          <img
+            src={tab1}
+            alt="Tableau troubles psychiques"
+            className="blog-image"
+          />
+          <p className="blog-caption">
+            Tableau récapitulatif des différents troubles psychiques du
+            post-partum et les symptômes associés.
+          </p>
+        </div>
 
-{/* Images 2 & 3 côte à côte */}
-<div className="blog-row">
-  <div className="blog-item">
-    <a href="/flyers/1000jours_flyer.pdf" target="_blank" rel="noopener noreferrer">
-      <img src={tab2} alt="Appli 1000 jours" className="blog-image" />
-    </a>
-    <p className="blog-caption">
-      Image smartphone de l'application <strong>1000 jours</strong>. Sur l'application est disponible un auto-test de la dépression du post-partum issu de l'EPDS.
-      <br />
-      <a href="/flyers/1000jours_flyer.pdf" target="_blank" rel="noopener noreferrer">
-        → Voir le flyer PDF
-      </a>
-    </p>
-  </div>
+        {/* Images 2 & 3 côte à côte */}
+        <div className="blog-row">
+          <div className="blog-item">
+            <a
+              href="/flyers/1000jours_flyer.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={tab2} alt="Appli 1000 jours" className="blog-image" />
+            </a>
+            <p className="blog-caption">
+              Image smartphone de l'application <strong>1000 jours</strong>. Sur
+              l'application est disponible un auto-test de la dépression du
+              post-partum issu de l'EPDS.
+              <br />
+              <a
+                href="https://1000jours.fabrique.social.gouv.fr/pdf/Flyer%20ETAT_presse.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                → Voir le flyer PDF
+              </a>
+            </p>
+          </div>
 
-  <div className="blog-item">
-    <img src={tab3} alt="Affiche EPNP" className="blog-image" />
-    <p className="blog-caption">
-      Affiche promotionnelle de l’EPNP du Réseau Méditerranée.
-    </p>
-  </div>
-</div>
+          <div className="blog-item">
+            <img src={tab3} alt="Affiche EPNP" className="blog-image" />
+            <p className="blog-caption">
+              Affiche promotionnelle de l’EPNP du Réseau Méditerranée.
+            </p>
+          </div>
+        </div>
 
-{/* Images 4 & 5-1/5-2 côte à côte */}
-<div className="blog-row">
-  <div className="blog-item">
-    <img src={tab4} alt="Guide EPNP" className="blog-image" />
-    <p className="blog-caption">
-      Outil n°1 pour les professionnels de santé : Guide EPNP.
-    </p>
-  </div>
+        {/* Images 4 & 5-1/5-2 côte à côte */}
+        <div className="blog-row">
+          <div className="blog-item">
+            <img src={tab4} alt="Guide EPNP" className="blog-image" />
+            <p className="blog-caption">
+              Outil n°1 pour les professionnels de santé : Guide EPNP.
+            </p>
+          </div>
 
-  <div className="blog-item">
-    <img src={tab5_1} alt="Feuille EPNP page 1" className="blog-image" />
-    <img src={tab5_2} alt="Feuille EPNP page 2" className="blog-image" />
-    <p className="blog-caption">
-      Outil n°2 pour les professionnels de santé : Feuille de synthèse EPNP.
-    </p>
-  </div>
-</div>
-
+          <div className="blog-item">
+            <img
+              src={tab5_1}
+              alt="Feuille EPNP page 1"
+              className="blog-image"
+            />
+            <img
+              src={tab5_2}
+              alt="Feuille EPNP page 2"
+              className="blog-image"
+            />
+            <p className="blog-caption">
+              Outil n°2 pour les professionnels de santé : Feuille de synthèse
+              EPNP.
+            </p>
+          </div>
+        </div>
       </div>
     </Fade>
   );
