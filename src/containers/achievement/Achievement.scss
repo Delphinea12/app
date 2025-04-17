@@ -6,8 +6,12 @@
   line-height: normal;
   margin: 0px;
 }
+
+.no-uppercase {
+  text-transform: none !important;
+}
+
 .achievement-subtitle {
-  text-transform: uppercase;
   margin: 0px;
   margin-bottom: 50px;
 }

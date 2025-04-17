@@ -30,3 +30,18 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
+.experience-basic,
+.skills-text-div {
+  color: #212121; // couleur par défaut (mode clair)
+
+  .dark-mode & {
+    color: #ffffff; // texte blanc en mode sombre
+  }
+}
+
+.note {
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-top: 1.5rem;
+  color: #555;
+}

@@ -8,11 +8,12 @@ export default function WorkExperience() {
   }
 
   return (
-    <div className="main" id="experience">
+    <div className="main" id="enjeux">
       <div className="experience-basic">
         <Fade bottom duration={1000} distance="20px">
           <h1 className="skills-heading">
-            Les enjeux de la quantification de la dépression post-partum
+            Les enjeux de la quantification de la <br /> <br />
+            dépression post-partum
           </h1>
         </Fade>
 

@@ -35,3 +35,11 @@
     text-align: center;
   }
 }
+
+.subTitle {
+  color: #212121;
+
+  .dark-mode & {
+    color: #ffffff;
+  }
+}

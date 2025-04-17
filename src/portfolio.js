@@ -74,7 +74,7 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "La DPP : de quoi parle-t-on ?",
+  title: ["La DPP :", "de quoi parle-t-on ?"],
   subTitle: "",
   skills: [
     "La dépression du post-partum est un trouble mental qui affecte les femmes après l'accouchement. Selon le DSM-5 (Manuel diagnostique et statistique des troubles mentaux, 5ᵉ édition), la DPP est un épisode de dépression majeure survenant pendant la grossesse ou dans les quatre semaines après l’accouchement.",
@@ -141,7 +141,7 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  title: "Les enjeux de la quantification de la dépression post-partum",
+  title: "",
   subTitle: "",
   skills: [],
   softwareSkills: [],
@@ -186,7 +186,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -253,9 +253,8 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+  title: "Ressources DDP",
+  subtitle: "",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {

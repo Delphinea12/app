@@ -16,6 +16,26 @@
   color: $subTitle;
 }
 
+.talk-bibliography {
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 1.6;
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 20px; // ✅ espace entre chaque item
+  }
+
+  a {
+    color: #007bff;
+    text-decoration: underline;
+  }
+}
+
 @media (max-width: 768px) {
   .talk-header-title {
     font-size: 30px;

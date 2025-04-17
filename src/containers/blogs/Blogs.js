@@ -4,6 +4,7 @@ import BlogCard from "../../components/blogCard/BlogCard";
 import {blogSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import tabImage from "../../assets/images/tab.png";
 export default function Blogs() {
   const {isDark} = useContext(StyleContext);
   const [mediumBlogs, setMediumBlogs] = useState([]);
@@ -49,7 +50,7 @@ export default function Blogs() {
   }
   return (
     <Fade bottom duration={1000} distance="20px">
-      <div className="main" id="blogs">
+      <div className="main" id="ressource">
         <div className="blog-header">
           <h1 className="blog-header-text">{blogSection.title}</h1>
           <p
@@ -60,38 +61,14 @@ export default function Blogs() {
             {blogSection.subtitle}
           </p>
         </div>
-        <div className="blog-main-div">
-          <div className="blog-text-div">
-            {blogSection.displayMediumBlogs !== "true" ||
-            mediumBlogs === "Error"
-              ? blogSection.blogs.map((blog, i) => {
-                  return (
-                    <BlogCard
-                      key={i}
-                      isDark={isDark}
-                      blog={{
-                        url: blog.url,
-                        image: blog.image,
-                        title: blog.title,
-                        description: blog.description
-                      }}
-                    />
-                  );
-                })
-              : mediumBlogs.map((blog, i) => {
-                  return (
-                    <BlogCard
-                      key={i}
-                      isDark={isDark}
-                      blog={{
-                        url: blog.link,
-                        title: blog.title,
-                        description: extractTextContent(blog.content)
-                      }}
-                    />
-                  );
-                })}
-          </div>
+
+        <div className="blog-centered-image">
+          <img src={tabImage} alt="Tableau DPP" className="blog-image" />
+          <p className="blog-caption">
+            Tiré du livre «{" "}
+            <strong>La dépression postnatale, sortir du silence</strong> ». N.
+            Nanzer. Édition Favre, 2009.
+          </p>
         </div>
       </div>
     </Fade>

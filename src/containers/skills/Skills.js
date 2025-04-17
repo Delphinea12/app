@@ -13,7 +13,7 @@ export default function Skills() {
     return null;
   }
   return (
-    <div className={isDark ? "dark-mode main" : "main"} id="skills">
+    <div className={isDark ? "dark-mode main" : "main"} id="avantpropos">
       <div className="skills-main-div">
         <Fade left duration={1000}>
           <div className="skills-image-div">
@@ -29,11 +29,32 @@ export default function Skills() {
         </Fade>
         <Fade right duration={1000}>
           <div className="skills-text-div">
-            <h1
-              className={isDark ? "dark-mode skills-heading" : "skills-heading"}
-            >
-              {skillsSection.title}{" "}
-            </h1>
+            {Array.isArray(skillsSection.title) ? (
+              <>
+                <h1
+                  className={
+                    isDark ? "dark-mode skills-heading" : "skills-heading"
+                  }
+                >
+                  {skillsSection.title[0]}
+                </h1>
+                <h1
+                  className={
+                    isDark ? "dark-mode skills-heading" : "skills-heading"
+                  }
+                >
+                  {skillsSection.title[1]}
+                </h1>
+              </>
+            ) : (
+              <h1
+                className={
+                  isDark ? "dark-mode skills-heading" : "skills-heading"
+                }
+              >
+                {skillsSection.title}
+              </h1>
+            )}
             <p
               className={
                 isDark

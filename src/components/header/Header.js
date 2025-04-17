@@ -28,9 +28,7 @@ function Header() {
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
         <a href="/" className="logo">
-          <span className="grey-color"> &lt;</span>
           <span className="logo-name">{greeting.username}</span>
-          <span className="grey-color">/&gt;</span>
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
@@ -43,32 +41,32 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Avant-propos</a>
+              <a href="#avantpropos">Avant-propos</a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Enjeux</a>
+              <a href="#enjeux">Enjeux</a>
             </li>
           )}
           {viewOpenSource && (
             <li>
-              <a href="#projects">Outils de quantification</a>
+              <a href="#outils">Outils de quantification</a>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Perspectives en santé publique</a>
+              <a href="#perspective">Perspectives en santé publique</a>
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="#blogs">Ressources DPP</a>
+              <a href="#ressource">Ressources DPP</a>
             </li>
           )}
           {viewTalks && (
             <li>
-              <a href="#talks">Référence bibliographique</a>
+              <a href="#references">Référence bibliographique</a>
             </li>
           )}
 
