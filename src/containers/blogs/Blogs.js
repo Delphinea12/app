@@ -11,10 +11,12 @@ import second from "../../assets/images/second.png";
 export default function Blogs() {
   const {isDark} = useContext(StyleContext);
   const [mediumBlogs, setMediumBlogs] = useState([]);
+
   function setMediumBlogsFunction(array) {
     setMediumBlogs(array);
   }
-  //Medium API returns blogs' content in HTML format. Below function extracts blogs' text content within paragraph tags
+
+  // Medium API returns blogs' content in HTML format. Below function extracts blogs' text content within paragraph tags
   function extractTextContent(html) {
     return typeof html === "string"
       ? html
@@ -25,6 +27,7 @@ export default function Blogs() {
           .join(" ")
       : NaN;
   }
+
   useEffect(() => {
     if (blogSection.displayMediumBlogs === "true") {
       const getProfileData = () => {
@@ -48,9 +51,11 @@ export default function Blogs() {
       getProfileData();
     }
   }, []);
+
   if (!blogSection.display) {
     return null;
   }
+
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="ressource">
@@ -72,9 +77,7 @@ export default function Blogs() {
             alt="Tableau troubles psychiques"
             className="blog-image"
           />
-          <p className="blog-caption">
-            
-          </p>
+          <p className="blog-caption"></p>
         </div>
 
         {/* Image 2 - first.png */}
@@ -94,7 +97,6 @@ export default function Blogs() {
             className="blog-image"
           />
         </div>
-
       </div>
     </Fade>
   );

@@ -35,22 +35,23 @@ export default function WorkExperience() {
                   >
                     l'enquête nationale périnatale (ENP) de 2021
                   </a>{" "}
-                  de Santé Publique France, environ 16,7 % des femmes en France sont
-                  touchées par la DPP. Avant l'ENP de 2021, les enquêtes nationales
-                  périnatales ne comportaient pas de questions spécifiques sur la
-                  dépression post-partum. L'enquête de 2021 a été la première à
-                  inclure une évaluation systématique de la santé mentale des mères
-                  en post-partum, notamment via des questions basées sur des outils
-                  de dépistage standardisés comme l'EPDS (Edinburgh Postnatal
-                  Depression Scale). Les ENP précédentes (2010 et 2016) se
-                  concentraient davantage sur les conditions de naissance, les soins
-                  périnataux, les pratiques médicales et les facteurs de risque
-                  périnataux, sans inclure un volet spécifique sur la dépression
-                  post-partum.
+                  de Santé Publique France, environ 16,7 % des femmes en France
+                  sont touchées par la DPP. Avant l'ENP de 2021, les enquêtes
+                  nationales périnatales ne comportaient pas de questions
+                  spécifiques sur la dépression post-partum. L'enquête de 2021 a
+                  été la première à inclure une évaluation systématique de la
+                  santé mentale des mères en post-partum, notamment via des
+                  questions basées sur des outils de dépistage standardisés
+                  comme l'EPDS (Edinburgh Postnatal Depression Scale). Les ENP
+                  précédentes (2010 et 2016) se concentraient davantage sur les
+                  conditions de naissance, les soins périnataux, les pratiques
+                  médicales et les facteurs de risque périnataux, sans inclure
+                  un volet spécifique sur la dépression post-partum.
                   <br />
                   <br />
-                  Malgré sa prévalence, la DPP reste largement sous-diagnostiquée
-                  avec 50 à 60 % des cas qui échapperaient à toute identification (
+                  Malgré sa prévalence, la DPP reste largement
+                  sous-diagnostiquée avec 50 à 60 % des cas qui échapperaient à
+                  toute identification (
                   <a
                     href="https://www.sciencedirect.com/science/article/abs/pii/S0924933814006452"
                     target="_blank"

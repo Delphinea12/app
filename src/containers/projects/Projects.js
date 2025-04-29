@@ -14,13 +14,17 @@ export default function Projects() {
     display: "block",
     marginLeft: "auto",
     marginRight: "auto",
-    marginBottom: "30px",
+    marginBottom: "30px"
   };
 
   return (
-    <div className="main" id="outils" style={{overflow: 'hidden', width: '100%', padding: 0}}>
+    <div
+      className="main"
+      id="outils"
+      style={{overflow: "hidden", width: "100%", padding: 0}}
+    >
       <Fade bottom duration={1000} distance="20px">
-        <div style={{width: '100%', padding: 0, margin: 0}}>
+        <div style={{width: "100%", padding: 0, margin: 0}}>
           <img
             alt="Les outils et dispositifs existants pour quantifier la dépression post-partum"
             src={lod}
@@ -30,7 +34,7 @@ export default function Projects() {
       </Fade>
 
       <Fade bottom duration={1000} distance="20px">
-        <div style={{width: '100%', padding: 0, margin: 0}}>
+        <div style={{width: "100%", padding: 0, margin: 0}}>
           <img
             alt="Opportunités de dépistage et échelle de temps"
             src={require("../../assets/images/ode.png")}

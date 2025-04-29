@@ -21,13 +21,9 @@ export default function Talks() {
             className="full-width-image"
           ></img>
         </div>
-        
-        <div className="full-width-image-container" style={{marginTop: '40px'}}>
-          <img
-            alt="À propos"
-            src={apropos}
-            className="full-width-image"
-          ></img>
+
+        <div className="full-width-image-container" style={{marginTop: "40px"}}>
+          <img alt="À propos" src={apropos} className="full-width-image"></img>
         </div>
       </div>
     </Fade>
