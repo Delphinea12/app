@@ -1,5 +1,22 @@
 @import "../../_globalColor";
 
+.full-width-image-container {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.full-width-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .skills-main-div {
   display: flex;
   width: 100%;

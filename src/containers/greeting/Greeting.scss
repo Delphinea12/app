@@ -17,12 +17,16 @@
   display: flex;
 }
 
-.subTitle {
-  color: $subTitle !important;
+.vertical-layout {
+  flex-direction: column;
 }
 
-.greeting-main {
-  display: flex;
+.full-width {
+  width: 100%;
+}
+
+.subTitle {
+  color: $subTitle !important;
 }
 
 .greeting-main > * {
@@ -46,6 +50,7 @@
   font-size: 70px;
   line-height: 1.1;
   color: $textColor !important;
+  text-align: center;
 }
 
 .greeting-text-p {
@@ -56,6 +61,8 @@
 .greeting-image-div > img {
   max-width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .wave-emoji {
@@ -116,7 +123,7 @@
     display: block;
   }
   .greeting-image-div {
-    height: 256px;
+    height: auto;
   }
 }
 

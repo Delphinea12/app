@@ -1,6 +1,7 @@
 import React from "react";
 import {workExperiences} from "../../portfolio";
 import {Fade} from "react-reveal";
+import "./WorkExperience.scss";
 
 export default function WorkExperience() {
   if (!workExperiences.display) {
@@ -20,53 +21,63 @@ export default function WorkExperience() {
         <Fade bottom duration={1000} distance="20px">
           <div className="skills-text-div">
             {/* Partie 1 */}
-            <p className="subTitle">
-              <strong>1. Un problème de santé publique</strong>
-              <br />
-              <br />
-              Selon{" "}
-              <a
-                href="https://enp.inserm.fr/wp-content/uploads/2023/09/ENP2021_Rapport_MAJ_Juin2023.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                l'enquête nationale périnatale (ENP) de 2021
-              </a>{" "}
-              de Santé Publique France, environ 16,7 % des femmes en France sont
-              touchées par la DPP. Avant l'ENP de 2021, les enquêtes nationales
-              périnatales ne comportaient pas de questions spécifiques sur la
-              dépression post-partum. L'enquête de 2021 a été la première à
-              inclure une évaluation systématique de la santé mentale des mères
-              en post-partum, notamment via des questions basées sur des outils
-              de dépistage standardisés comme l'EPDS (Edinburgh Postnatal
-              Depression Scale). Les ENP précédentes (2010 et 2016) se
-              concentraient davantage sur les conditions de naissance, les soins
-              périnataux, les pratiques médicales et les facteurs de risque
-              périnataux, sans inclure un volet spécifique sur la dépression
-              post-partum.
-              <br />
-              <br />
-              Malgré sa prévalence, la DPP reste largement sous-diagnostiquée
-              avec 50 à 60 % des cas qui échapperaient à toute identification (
-              <a
-                href="https://www.sciencedirect.com/science/article/abs/pii/S0924933814006452"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Bales et al., 2015
-              </a>
-              ), ce qui soulève une problématique majeure de santé publique.
-            </p>
+            <div className="content-with-image">
+              <div className="text-content">
+                <p className="subTitle">
+                  <strong>Un problème de santé publique</strong>
+                  <br />
+                  <br />
+                  Selon{" "}
+                  <a
+                    href="https://enp.inserm.fr/wp-content/uploads/2023/09/ENP2021_Rapport_MAJ_Juin2023.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    l'enquête nationale périnatale (ENP) de 2021
+                  </a>{" "}
+                  de Santé Publique France, environ 16,7 % des femmes en France sont
+                  touchées par la DPP. Avant l'ENP de 2021, les enquêtes nationales
+                  périnatales ne comportaient pas de questions spécifiques sur la
+                  dépression post-partum. L'enquête de 2021 a été la première à
+                  inclure une évaluation systématique de la santé mentale des mères
+                  en post-partum, notamment via des questions basées sur des outils
+                  de dépistage standardisés comme l'EPDS (Edinburgh Postnatal
+                  Depression Scale). Les ENP précédentes (2010 et 2016) se
+                  concentraient davantage sur les conditions de naissance, les soins
+                  périnataux, les pratiques médicales et les facteurs de risque
+                  périnataux, sans inclure un volet spécifique sur la dépression
+                  post-partum.
+                  <br />
+                  <br />
+                  Malgré sa prévalence, la DPP reste largement sous-diagnostiquée
+                  avec 50 à 60 % des cas qui échapperaient à toute identification (
+                  <a
+                    href="https://www.sciencedirect.com/science/article/abs/pii/S0924933814006452"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Bales et al., 2015
+                  </a>
+                  ), ce qui soulève une problématique majeure de santé publique.
+                </p>
+              </div>
+              <div className="image-content">
+                <img
+                  alt="Enjeux de la dépression post-partum"
+                  src={require("../../assets/images/enjeux.png")}
+                />
+              </div>
+            </div>
 
             {/* Partie 2 */}
             <p className="subTitle">
-              <strong>2. Les obstacles au diagnostic</strong>
+              <strong>Les obstacles au diagnostic</strong>
               <br />
               <br />
               Le sous-diagnostic de la DPP peut s'expliquer par une combinaison
               de facteurs à la fois individuels, sociaux et systémiques. Sur le
               plan individuel, de nombreuses femmes éprouvent de la culpabilité
-              ou de la honte à l’idée d’éprouver des sentiments négatifs après
+              ou de la honte à l'idée d'éprouver des sentiments négatifs après
               la naissance de leur enfant, ce qui les conduit à taire leurs
               souffrances (
               <a
@@ -79,11 +90,11 @@ export default function WorkExperience() {
               ).
               <br />
               <br />
-              Selon Lussier et al., « Qu’il soit ancré dans la réalité ou non,
+              Selon Lussier et al., « Qu'il soit ancré dans la réalité ou non,
               le mythe de la jeune mère parfaitement heureuse, entourée,
               épanouie, rayonnante et adulée, qui ne connait ni le doute, ni
-              l’ambivalence, n’est tombé en désuétude : il survient dans
-              l’imaginaire des femmes qui s’inquiètent dès qu’elles ne collent
+              l'ambivalence, n'est tombé en désuétude : il survient dans
+              l'imaginaire des femmes qui s'inquiètent dès qu'elles ne collent
               pas à cette image. »<br />
               <br />
               Le regard social et les représentations idéalisées de la maternité
@@ -91,19 +102,19 @@ export default function WorkExperience() {
               mères.
               <br />
               <br />
-              Le concept de « matrescence » développé par l’anthropologue
+              Le concept de « matrescence » développé par l'anthropologue
               américaine Dana Raphael en 1970 est la contraction de « maternité
               » et « adolescence » pour désigner la transformation physique,
-              émotionnelle, hormonale, sociale et identitaire qu’une femme
-              traverse lorsqu’elle devient mère. L’idée centrale est que devenir
-              mère n’est pas seulement un événement biologique ou social, mais
-              une transition profonde dans l’identité, comparable à celle de
-              l’adolescence (<em>Sarlat C, 2019</em>).
+              émotionnelle, hormonale, sociale et identitaire qu'une femme
+              traverse lorsqu'elle devient mère. L'idée centrale est que devenir
+              mère n'est pas seulement un événement biologique ou social, mais
+              une transition profonde dans l'identité, comparable à celle de
+              l'adolescence (<em>Sarlat C, 2019</em>).
               <br />
               <br />
-              En effet, la naissance d’un enfant ne s’accompagne pas
-              systématiquement, chez toutes les femmes, d’un état émotionnel
-              euphorique ou d’un attachement immédiat. Cette dissonance
+              En effet, la naissance d'un enfant ne s'accompagne pas
+              systématiquement, chez toutes les femmes, d'un état émotionnel
+              euphorique ou d'un attachement immédiat. Cette dissonance
               émotionnelle, souvent minorée, contraste avec les représentations
               idéalisées de la maternité et peut être accentuée par les
               bouleversements hormonaux, psychosociaux et identitaires
@@ -118,12 +129,12 @@ export default function WorkExperience() {
 
             {/* Partie 3 */}
             <p className="subTitle">
-              <strong>3. Conséquences de la DPP</strong>
+              <strong>Conséquences de la DPP</strong>
               <br />
               <br />
               La DPP peut avoir des répercussions profondes, non seulement sur
               la santé mentale de la mère, mais également sur le développement
-              de l’enfant et l’équilibre familial (
+              de l'enfant et l'équilibre familial (
               <em>
                 <a
                   href="https://shs.cairn.info/revue-la-psychiatrie-de-l-enfant-2011-2-page-611?lang=fr&tab=cites-par"
@@ -138,14 +149,14 @@ export default function WorkExperience() {
               <br />
               Sur le plan individuel, la mère en situation de DPP manifeste une
               altération de son bien-être émotionnel, marquée par des sentiments
-              d’incapacité, de culpabilité, d’anxiété excessive vis-à-vis de son
+              d'incapacité, de culpabilité, d'anxiété excessive vis-à-vis de son
               enfant, ainsi que par une fatigue persistante. Ces symptômes
               affectent sa disponibilité affective et sa capacité à interpréter
               adéquatement les signaux émis par son bébé, compromettant ainsi
               les interactions précoces mère-enfant.
               <br />
               <br />
-              Les répercussions sur l’enfant sont notables. Une relation
+              Les répercussions sur l'enfant sont notables. Une relation
               insécure avec une mère en retrait ou, au contraire, intrusive,
               peut entraver la régulation émotionnelle du nourrisson et son
               développement socio-affectif, cognitif et comportemental. Les
@@ -167,13 +178,13 @@ export default function WorkExperience() {
               <br />
               <br />
               La famille, dans son ensemble, est également affectée. Le rôle du
-              père s’avère central : il peut jouer un rôle protecteur en
+              père s'avère central : il peut jouer un rôle protecteur en
               soutenant la mère et en établissant une relation positive avec
-              l’enfant. Toutefois, en présence de conflits conjugaux ou si le
-              père souffre lui-même de troubles psychiques, l’impact négatif sur
-              l’enfant peut être renforcé. La qualité des relations familiales
+              l'enfant. Toutefois, en présence de conflits conjugaux ou si le
+              père souffre lui-même de troubles psychiques, l'impact négatif sur
+              l'enfant peut être renforcé. La qualité des relations familiales
               apparaît ainsi comme une variable modératrice déterminante dans
-              l’évolution de la situation(
+              l'évolution de la situation(
               <em>
                 <a
                   href="https://shs.cairn.info/revue-la-psychiatrie-de-l-enfant-2011-2-page-611?lang=fr&tab=cites-par"

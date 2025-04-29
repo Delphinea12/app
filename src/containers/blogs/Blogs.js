@@ -5,11 +5,8 @@ import {blogSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 import tab1 from "../../assets/images/tab1.png";
-import tab2 from "../../assets/images/tab2.png";
-import tab3 from "../../assets/images/tab3.png";
-import tab4 from "../../assets/images/tab4.png";
-import tab5_1 from "../../assets/images/tab5-1.png";
-import tab5_2 from "../../assets/images/tab5-2.png";
+import first from "../../assets/images/first.png";
+import second from "../../assets/images/second.png";
 
 export default function Blogs() {
   const {isDark} = useContext(StyleContext);
@@ -68,7 +65,7 @@ export default function Blogs() {
           </p>
         </div>
 
-        {/* Image 1 */}
+        {/* Image 1 - tab1.png conservée */}
         <div className="blog-centered-image">
           <img
             src={tab1}
@@ -76,70 +73,28 @@ export default function Blogs() {
             className="blog-image"
           />
           <p className="blog-caption">
-            Tableau récapitulatif des différents troubles psychiques du
-            post-partum et les symptômes associés.
+            
           </p>
         </div>
 
-        {/* Images 2 & 3 côte à côte */}
-        <div className="blog-row">
-          <div className="blog-item">
-            <a
-              href="/flyers/1000jours_flyer.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={tab2} alt="Appli 1000 jours" className="blog-image" />
-            </a>
-            <p className="blog-caption">
-              Image smartphone de l'application <strong>1000 jours</strong>. Sur
-              l'application est disponible un auto-test de la dépression du
-              post-partum issu de l'EPDS.
-              <br />
-              <a
-                href="https://1000jours.fabrique.social.gouv.fr/pdf/Flyer%20ETAT_presse.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                → Voir le flyer PDF
-              </a>
-            </p>
-          </div>
-
-          <div className="blog-item">
-            <img src={tab3} alt="Affiche EPNP" className="blog-image" />
-            <p className="blog-caption">
-              Affiche promotionnelle de l’EPNP du Réseau Méditerranée.
-            </p>
-          </div>
+        {/* Image 2 - first.png */}
+        <div className="blog-centered-image">
+          <img
+            src={first}
+            alt="Première ressource DPP"
+            className="blog-image"
+          />
         </div>
 
-        {/* Images 4 & 5-1/5-2 côte à côte */}
-        <div className="blog-row">
-          <div className="blog-item">
-            <img src={tab4} alt="Guide EPNP" className="blog-image" />
-            <p className="blog-caption">
-              Outil n°1 pour les professionnels de santé : Guide EPNP.
-            </p>
-          </div>
-
-          <div className="blog-item">
-            <img
-              src={tab5_1}
-              alt="Feuille EPNP page 1"
-              className="blog-image"
-            />
-            <img
-              src={tab5_2}
-              alt="Feuille EPNP page 2"
-              className="blog-image"
-            />
-            <p className="blog-caption">
-              Outil n°2 pour les professionnels de santé : Feuille de synthèse
-              EPNP.
-            </p>
-          </div>
+        {/* Image 3 - second.png */}
+        <div className="blog-centered-image">
+          <img
+            src={second}
+            alt="Seconde ressource DPP"
+            className="blog-image"
+          />
         </div>
+
       </div>
     </Fade>
   );

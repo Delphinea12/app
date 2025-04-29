@@ -4,6 +4,12 @@
   line-height: normal;
 }
 
+.section-spacing {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #eaeaea;
+}
+
 .startup-project-text img {
   max-width: 100%;
   height: auto;
@@ -44,4 +50,26 @@
   font-size: 0.95rem;
   margin-top: 1.5rem;
   color: #555;
+}
+
+.full-width-image-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  position: relative;
+  left: 0;
+  right: 0;
+  overflow: visible;
+}
+
+.full-width-image {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  margin-bottom: 30px;
 }

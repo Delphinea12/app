@@ -14,6 +14,13 @@ export default function Skills() {
   }
   return (
     <div className={isDark ? "dark-mode main" : "main"} id="avantpropos">
+      <div className="full-width-image-container">
+        <img
+          alt="Avant-propos"
+          src={require("../../assets/images/avantpropos.png")}
+          className="full-width-image"
+        ></img>
+      </div>
       <div className="skills-main-div">
         <Fade left duration={1000}>
           <div className="skills-image-div">
